@@ -7,12 +7,13 @@
 * [TINET Website](https://tinet.tkbstudios.com/)
 * [TINET Discord server](https://discord.gg/f63fmqtvWb)
 
-## Basic Docs
+## 📚 Docs
 
-* [⬇ Installation](basic-docs/installation.md)
-* [❓ How To Use](basic-docs/how-to-use.md)
+* [⬇ Installation](docs/installation.md)
+* [❓ How To Use](docs/how-to-use.md)
 
-## Developers
+## 📖 Developers
 
 * [🌐 API](developers/api.md)
 * [🌐 TCP](developers/tcp.md)
+* [😎 Useful resources](developers/useful-resources.md)
