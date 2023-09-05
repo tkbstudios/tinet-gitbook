@@ -70,12 +70,4 @@ On Linux Python can be installed with:\
 {% endhint %}
 
 * Navigate to your folder containing the extracted or cloned repository.
-* Run this command in that directory/folder to install the required Python dependencies. `pip3 install -r requirements.txt`
-* Next you can open the TINET program on your calculator.
-* Now run the bridge python script with `python3 tinet-bridge.py`
-* You may have to select the correct com port. On Windows, you can find the matching port at (`Open Device Manager (Start → Control Panel → Hardware and Sound → Device Manager) Look in the Device Manager list, open the category "Ports", and find the matching COM Port)`
-* On your calculator in TINET press \[enter] after you see bridge connected to login to TINET.&#x20;
-
-{% hint style="warning" %}
-If you see a QR code when you try to login re-download and send your keyfile.
-{% endhint %}
+* Run this command in that directory/folder to install the required Python dependencies. `python3 -m pip install -r requirements.txt`
