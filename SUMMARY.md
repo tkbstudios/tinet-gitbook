@@ -6,6 +6,8 @@
 
 * [TINET Website](https://tinet.tkbstudios.com/)
 * [TINET Discord server](https://discord.gg/f63fmqtvWb)
+* [⬇ Bridge Github ](https://github.com/tkbstudios/tinet-bridge)
+* [⬇ TINET Releases](https://github.com/tkbstudios/tinet-calc/releases)
 
 ## 📚 Docs
 
