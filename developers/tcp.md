@@ -14,6 +14,17 @@ You can use [TINET-TERM](https://github.com/tkbstudios/tinet-term) to work on th
 
 </details>
 
+{% hint style="info" %}
+Server address for TCP is the following:
+
+* domain: tinethub.tkbstudios.com
+* port: 2052
+{% endhint %}
+
+{% hint style="warning" %}
+TCP side also has rate limiting, your command will be dropped if you send too much commands, your command will be dropped and won't be executed.
+{% endhint %}
+
 ## Outgoing TCP commands
 
 #### SERVER\_PING
@@ -32,15 +43,22 @@ You can use [TINET-TERM](https://github.com/tkbstudios/tinet-term) to work on th
     user_id;username;email;last_login;plan;total_requests;time_online;user_public
     ```
 
-    * `last_login`: Epoch time.
+    * `user_id`: int
+    * `username`: max. 18 chars
+    * `last_login`: Epoch time
+    * `plan`: "free", "pro" or "OG"
+    * `total_requests`: int
+    * `time_online`: seconds
+    * `user_public`: 1 for true and 0 for false
 
 #### RTC\_CHAT:recipient:message
 
-* **Description**: Sends a message to the recipient, where `recipient` can be "global" for global messages or a friend's username for direct messaging (Work in Progress).
+* **Description**: Sends a message to the recipient, where `recipient` can be "global" for global messages or a friend's username for DM (DMs are work in progress).
 
 #### GET\_BUCKET\_CONTENT:bucketname (Work in Progress)
 
-* **Description**: Retrieves a list of files in the specified bucket, returning filenames.
+* **Description**: Retrieves a list of files in the specified bucket, returning filenames.\
+  `filename1;filename2;filename3`
 
 #### GET\_BUCKET\_FILE:bucketname:filename (Work in Progress)
 
@@ -65,6 +83,7 @@ You can use [TINET-TERM](https://github.com/tkbstudios/tinet-term) to work on th
 #### LIST\_REPO:category (Work in Progress)
 
 * **Description**: Lists repositories by category, returning filenames, with an error response.
+* Categories: "games", "tools", "oiramlevels", "geodashlevels"
 
 #### GET\_AD
 
