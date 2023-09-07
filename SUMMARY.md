@@ -18,4 +18,5 @@
 
 * [🌐 API](developers/api.md)
 * [🌐 TCP](developers/tcp.md)
+* [🌉 BRIDGE](developers/bridge.md)
 * [😎 Useful resources](developers/useful-resources.md)
