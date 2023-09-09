@@ -1,8 +1,8 @@
 ---
-description: These are the UDP docs, here are all the UDP commands documented
+description: These are the TCP docs, here are all the TCP commands documented
 ---
 
-# 🌐 UDP
+# 🌐 TCP
 
 
 
@@ -10,22 +10,22 @@ description: These are the UDP docs, here are all the UDP commands documented
 
 <summary>TINET-TERM for developers</summary>
 
-You can use [TINET-TERM](https://github.com/tkbstudios/tinet-term) to work on the UDP side of TINET if you are a developer that wants to build on TINET.
+You can use [TINET-TERM](https://github.com/tkbstudios/tinet-term) to work on the TCP side of TINET if you are a developer that wants to build on TINET.
 
 </details>
 
 {% hint style="info" %}
-Server address for the UDP server is the following:
+Server address for the TCP server is the following:
 
 * domain: tinethub.tkbstudios.com
 * port: 2052
 {% endhint %}
 
 {% hint style="warning" %}
-UDP side also has rate limiting, your command will be dropped if you send too much commands, your command will be dropped and won't be executed.
+TCP side also has rate limiting, your command will be dropped if you send too much commands, your command will be dropped and won't be executed.
 {% endhint %}
 
-## Outgoing UDP commands
+## Outgoing TCP commands
 
 #### SERVER\_PING
 
@@ -99,11 +99,11 @@ UDP side also has rate limiting, your command will be dropped if you send too mu
 
 #### SERIAL\_CONNECTED
 
-* **Description**: Sent when connecting to the UDP server, likely handled automatically.
+* **Description**: Sent when connecting to the TCP server, likely handled automatically.
 
 
 
-## Incoming UDP data
+## Incoming TCP data
 
 #### RTC\_CHAT: recipient: timestamp: username: message
 

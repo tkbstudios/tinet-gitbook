@@ -17,6 +17,6 @@
 ## 📖 Developers
 
 * [🌐 API](developers/api.md)
-* [🌐 UDP](developers/udp.md)
+* [🌐 TCP](developers/tcp.md)
 * [🌉 BRIDGE](developers/bridge.md)
 * [😎 Useful resources](developers/useful-resources.md)
