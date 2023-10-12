@@ -21,7 +21,7 @@ If you are on TI OS 5.5.3 or higher please install the [arTIfiCE](https://yvantt
 Be sure not to share your keyfile with anyone as it contains your login credentials (username and calc key which is not your password but could still allow people to log into your account).
 {% endhint %}
 
-* Download [clibs.8xg](https://tiny.cc/clibs)
+* Download [clibs.8xg](https://github.com/CE-Programming/libraries/releases/latest)
 * Download the latest release of the [client](https://github.com/tkbstudios/tinet-calc/releases) and [bridge](https://github.com/tkbstudios/tinet-bridge/tree/master).\
   On Linux, the bridge can be cloned easily using\
   `git clone https://github.com/tkbstudios/tinet-bridge` for the main branch.\
