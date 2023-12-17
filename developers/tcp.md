@@ -22,7 +22,7 @@ Server address for the TCP server is the following:
 {% endhint %}
 
 {% hint style="warning" %}
-TCP side also has rate limiting, your command will be dropped if you send too much commands, your command will be dropped and won't be executed.
+TCP server also has rate limiting, if you send too much requests/data, your request **will** be dropped and won't be executed.
 {% endhint %}
 
 ## Outgoing TCP commands
@@ -40,12 +40,11 @@ TCP side also has rate limiting, your command will be dropped if you send too mu
 *   **Description**: Returns account information in the following format:
 
     ```
-    user_id;username;email;last_login;plan;total_requests;time_online;user_public
+    user_id;username;email;plan;total_requests;time_online;user_public
     ```
 
     * `user_id`: int
     * `username`: max. 18 chars
-    * `last_login`: Epoch time
     * `plan`: "free", "pro" or "OG"
     * `total_requests`: int
     * `time_online`: seconds
@@ -105,15 +104,15 @@ TCP side also has rate limiting, your command will be dropped if you send too mu
 
 ## Incoming TCP data
 
-#### RTC\_CHAT: recipient: timestamp: username: message
+#### RTC\_CHAT:recipient:timestamp:username:message
 
 * This is received every time a message is being sent in TINET Chat.
-* Recipient: username or a global chatroom name (global, etc.. more are coming later), max. 18 chars
+* Recipient: username or a global chatroom name (global, etc.. more are coming later), max. 19 chars (including \0)
 * Timestamp is an epoch timestamp
-* Username: max. 18 chars
+* Username: max. 19 chars (including \0)
 * Message: limited to 300 chars (gets cut off by servers)
 
-#### GAME\_INVITE: sender: game (Work In Progress)
+#### GAME\_INVITE:sender:game (Work In Progress)
 
 * This is received every time a friend invites you to play a game
 * sender: max. 18 chars and limited to friendlist

@@ -12,15 +12,15 @@ Please follow every step for everything to work fine
 [installation.md](installation.md)
 {% endcontent-ref %}
 
-* Open the TINET program on your calculator.
+* Launch your favorite TINET-powered program
 
 {% hint style="warning" %}
-If you see a QR code when you try to log in, download the latest release (TINET.8xp), reset your keyfile key and download your keyfile (NETKEY.8xv).
+If anything fails, download the latest release of the TINET-powered program, reset your keyfile key on the web dashboard, download your keyfile (NetKey.8xv) and update the bridge.
 
-Transfer these 2 files over again to your calculator while also overwriting the previous one.
+Transfer these 2 files over again to your calculator while also overwriting the previous ones.
 {% endhint %}
 
-* Run the python bridge using`python3 tinet-bridge.py`
+* Run the python bridge using`python3 tinet-bridge.py` (if downloaded tinet-bridge.exe for windows, double click it)
 * You may have to select the correct serial/COM port manually.
 
 <details>
@@ -35,40 +35,14 @@ A COM port looks like this: COM1, COM2, COM3, etc..
 
 </details>
 
-* On your calculator in TINET press \[enter] after you see internet connected to login to TINET.&#x20;
+* Follow the instructions on your calculator in the TINET-powered program.
 
 ### Common issues that could rarely happen
 
 <details>
 
-<summary>I don't see "internet connected"</summary>
+<summary>ALREADY_CONNECTED</summary>
 
-If you don't see internet connected, please check your bridge if it is connected to the calculator AND the TCP server (tinethub.tkbstudios.com:2052).
-
-</details>
-
-<details>
-
-<summary>I only see "bridge connected"</summary>
-
-This means there was an issue opening the socket connection to the servers, this could be due to an active maintenance on the production infrastructure which doesn't always take long, you can always check the TINET Discord server for status updates.
-
-This is not a case that happens often, usually the bridge raises an Exception and exits itself.
-
-</details>
-
-<details>
-
-<summary>I don't see "bridge connected" and "internet connected"</summary>
-
-There could be an issue with how you did it, try again.
-
-</details>
-
-<details>
-
-<summary>It still doesn't work!! Even after I tried again!</summary>
-
-Then open a post in #forum in the [discord server](https://discord.gg/f63fmqtvWb).
+This happens when you already have a session on the TINET server. Wait 5 minutes and the session will expire.
 
 </details>

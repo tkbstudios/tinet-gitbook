@@ -1,5 +1,5 @@
 ---
-description: This page shows you how to install TINET to use it
+description: This page shows you how to install TINET NETCHAT to use it
 ---
 
 # ⬇ Installation
@@ -22,20 +22,10 @@ Be sure not to share your keyfile with anyone as it contains your login credenti
 {% endhint %}
 
 * Download [clibs.8xg](https://github.com/CE-Programming/libraries/releases/latest)
-* Download the latest release of the [client](https://github.com/tkbstudios/tinet-calc/releases) and [bridge](https://github.com/tkbstudios/tinet-bridge/tree/master).\
+* Download the latest release of the TINET-powered program you choose and the [bridge](https://github.com/tkbstudios/tinet-bridge/tree/master).\
   On Linux, the bridge can be cloned easily using\
   `git clone https://github.com/tkbstudios/tinet-bridge` for the main branch.\
   `git clone -b dev https://github.com/tkbstudios/tinet-bridge` for the dev branch.
-
-<figure><img src="../.gitbook/assets/github_release_tinet_8xp_download.png" alt="Download TINET.8xp from release you want on github" width="563"><figcaption><p>Download TINET.8xp from the release you want</p></figcaption></figure>
-
-{% hint style="info" %}
-Dev (DEV-x) versions are the most updated but are not guaranteed to be stable like stable versions (Vx.x.x).
-
-They also offer a lot of bug fixes to known bugs in Stable releases.
-
-You choose which release you want, we still recommend you choose.
-{% endhint %}
 
 ***
 
@@ -63,9 +53,19 @@ On Chrome OS you can use [ticalc.link](https://ticalc.link/) or [TI Connect CE f
 {% endtab %}
 {% endtabs %}
 
+{% hint style="info" %}
+If you are windows, we have automated .EXE builds for the bridge, so you won't need to install python, dependencies, etc..!
+
+This is very useful if you don't know anything about such things!
+
+Download latest release [here](https://github.com/tkbstudios/tinet-bridge/releases/latest)
+
+skip the following steps on this page if you downloaded the .EXE, you just should run tinet-bridge.exe and plug your calculator in, the magic should happen right after.
+{% endhint %}
+
 {% hint style="warning" %}
-Please make sure that you have Python 3.11 (Or 3.12 beta) and pip3. Python can be installed on Windows at the Microsoft Store [here](https://apps.microsoft.com/store/detail/python-311/9NRWMJP3717K) (recommended) or from python.org [here](https://www.python.org/downloads/).\
-On Linux Python can be installed with:\
+Please make sure that you have Python >3.10 and pip. Python can be installed on Windows from the Microsoft Store [here](https://apps.microsoft.com/store/detail/python-311/9NRWMJP3717K) (recommended for beginners) or from python.org [here](https://www.python.org/downloads/).\
+On Linux, Python and pip can be installed by opening a terminal and typing:\
 `sudo apt install python3 python3-pip`
 {% endhint %}
 
